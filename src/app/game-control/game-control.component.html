@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="toggleBtn()">
+    <span *ngIf="!started">Start</span>
+    <span *ngIf="started">Stop</span>
+</button>
+<h3>{{ gameNumb }}</h3>
+<app-odd [numberTypes]="numberTypes"></app-odd>
